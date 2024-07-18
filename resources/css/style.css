@@ -1,0 +1,136 @@
+/* ------- */
+/* GENERAL */
+/* ------- */
+
+html {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header {
+    height: 50dvh;
+}
+
+h1 {
+    font-size: 23dvh;
+    line-height: 25dvh;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+/* --- */
+/* NAV */
+/* --- */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    position: sticky;
+    top: 0;
+    height: 10dvh;
+    margin-top: 20dvh;
+    margin-bottom: 20dvh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+}
+
+.nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    font-size: 8dvh;
+}
+
+/* ------------ */
+/* acerca de mi */
+/* ------------ */
+
+#acerca-de-mi {
+    scroll-margin-top: 10vh;
+    min-height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10dvh 20dvh;
+
+    
+    
+    
+    background-color: red;
+}
+
+/* --------- */
+/* proyectos */
+/* --------- */
+
+#proyectos {
+    scroll-margin-top: 10vh;
+    min-height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10dvh 10dvw;
+
+
+
+
+
+
+    background-color: green;
+}
+
+.proyecto {
+    max-width: 80%;
+    max-height: 80dvh;
+    position: sticky;
+    top: 15dvh;
+    background-color: rgb(59, 59, 59);
+    overflow: hidden;
+    aspect-ratio:  1280 / 800;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        color: white;
+        flex-grow: 1;
+    }
+}
+
+.img-proyecto {
+    width: 100%;
+}
+
+

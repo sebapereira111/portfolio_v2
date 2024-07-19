@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-list {
-    position: sticky;
+    position: inherit;
     top: 0;
     height: 10dvh;
     margin-top: 20dvh;
@@ -88,7 +88,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20dvh 20dvh 10dvh 20dvh;
+    padding: 20dvh 20vw 10dvh 20vw;
     ul {
         display: flex;
         flex-direction: row;
@@ -115,18 +115,17 @@ nav {
 /* --------- */
 
 #proyectos {
-    min-height: 90dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10dvh;
-    padding: 10dvh 10dvw;
+    row-gap: 25dvh;
+    padding: 10dvh 10dvw 15dvh 10dvw;
     position: relative;
 }
 
 .proyecto {
-    scroll-margin-top: 15dvh;
     max-width: 100%;
     max-height: 80dvh;
     position: sticky;
@@ -178,3 +177,58 @@ nav {
 #p-nav-2 {
     top: calc(50dvh + 1vw);
 }
+
+/* ----------------- */
+/* Responsive design */
+/* ----------------- */
+
+@media all and (orientation: portrait) {
+    h1 {
+        font-size: 16vw;
+        line-height: 17vw;
+    }
+    .nav-list {
+        height: 40dvh;
+        margin-top: 5dvh;
+        margin-bottom: 5dvh;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        position: static;
+    }
+    .nav-link {
+        color: #D1F2EB;
+        font-size: 6dvh;
+    }
+    .contenido {
+        padding: 10dvh 5dvh 5dvh 5dvh;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    #proyectos {
+        row-gap: 45dvh;
+        padding: 50dvh 2dvw 25dvh 2dvw;
+    }
+    .proyecto {
+        position: sticky;
+        top: 55dvh;
+        transform: translateY(-50%);
+        aspect-ratio:  1280 / 880;
+            h3 {
+            font-size: 1.5rem;
+        }
+    }
+    #proyectos-nav {
+        display: none;
+    }
+}
+
+

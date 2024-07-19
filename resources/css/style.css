@@ -2,9 +2,14 @@
 /* GENERAL */
 /* ------- */
 
+:root {
+    --background: #17202A;
+    --forecolor: #D1F2EB;
+  }
+
 html {
     background-color: black;
-    color: white;
+    color: var(--forecolor);
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,6 +17,7 @@ html {
 body {
     max-width: 1280px;
     margin: auto;
+    background-color: var(--background);
 }
 
 h2 {
@@ -48,6 +54,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: var(--background);
+    box-shadow: 0px 5vh 5vh 0px #17202A;
 }
 
 .nav-list {
@@ -58,8 +66,6 @@ nav {
     margin-bottom: 20dvh;
     display: flex;
     align-items: center;
-    background-color: black;
-
 }
 
 .nav-item {
@@ -68,21 +74,40 @@ nav {
 }
 
 .nav-link {
-    color: white;
+    color: #D1F2EB;
     font-size: 8dvh;
 }
 
-/* ------------ */
-/* acerca de mi */
-/* ------------ */
+/* ------------------------------------ */
+/* acerca de mi, habilidades y contacto */
+/* ------------------------------------ */
 
-#acerca-de-mi {
+.contenido {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20dvh 20dvh 10dvh 20dvh;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15dvh;
+        li {
+            a {
+                color: var(--forecolor);
+            }
+        }
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.contenido-icono {
+    font-size: 10dvh !important;
+    line-height: 15dvh !important;
 }
 
 /* --------- */
@@ -113,7 +138,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3 {
+        h3 {
         margin: auto;
         color: white;
         font-size: 1rem;
@@ -135,7 +160,7 @@ nav {
 
 .p-nav {
     position: sticky;
-    color: white !important;
+    color: var(--forecolor) !important;
     font-size: 2vw !important;
     :hover {
         cursor: pointer;
@@ -152,61 +177,4 @@ nav {
 
 #p-nav-2 {
     top: calc(50dvh + 1vw);
-}
-
-/* ----------- */
-/* habilidades */
-/* ----------- */
-
-#habilidades {
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20dvh 20dvh 10dvh 20dvh;
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 15dvh;
-    }
-}
-
-.habilidad-icono {
-    font-size: 10dvh !important;
-    line-height: 15dvh !important;
-}
-
-/* -------- */
-/* contacto */
-/* -------- */
-
-#contacto {
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20dvh 20dvh 10dvh 20dvh;
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 15dvh;
-        li {
-            a {
-                color: white;
-            }
-        }
-    }
-    h2 {
-        font-size: 2rem;
-        color: white;
-    }
-}
-
-.contacto-icono {
-    font-size: 10dvh !important;
-    line-height: 15dvh !important;
 }

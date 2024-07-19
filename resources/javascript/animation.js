@@ -1,5 +1,20 @@
-const header = document.getElementsByTagName("header");
-const nav = document.getElementsByTagName("nav");
+const observer = new IntersectionObserver(
+    (entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+            } else {
+                entry.target.style.opacity = "0";
+            }
+        }
+    },
+    { threshold: 0.6 }
+);
+  
+//const contenido = document.getElementById('acerca-de-mi');
+const contenido = document.getElementsByClassName('contenido');
 
-const headerStyles = window.getComputedStyle(header[0]);
-const navStyles = window.getComputedStyle(nav[0]);
+for (i = 0 ; i < contenido.length ; i++) {
+    observer.observe(contenido[i]);
+}
+

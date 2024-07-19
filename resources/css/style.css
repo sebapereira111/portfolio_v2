@@ -89,6 +89,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 20dvh 20vw 10dvh 20vw;
+    transition: opacity 2s;
     ul {
         display: flex;
         flex-direction: row;

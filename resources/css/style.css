@@ -4,6 +4,7 @@
 
 :root {
     --background: #17202A;
+    --background-dark: #121a23;
     --forecolor: #D1F2EB;
   }
 
@@ -55,7 +56,7 @@ nav {
     top: 0;
     z-index: 100;
     background-color: var(--background);
-    box-shadow: 0px 5vh 5vh 0px #17202A;
+    box-shadow: 0px 3vh 3vh 0px #17202A;
 }
 
 .nav-list {
@@ -82,20 +83,19 @@ nav {
 /* acerca de mi, habilidades y contacto */
 /* ------------------------------------ */
 
-.contenido {
-    min-height: 100dvh;
+.block {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20dvh 20vw 10dvh 20vw;
-    transition: opacity 2s;
+    padding: 5dvh 10vw 5dvh 10vw;
+    background-color: var(--background-dark);
+    border-radius: 5%;
     ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 15dvh;
         li {
+            display: inline-block;
             a {
                 color: var(--forecolor);
             }
@@ -106,8 +106,14 @@ nav {
     }
 }
 
+.contenido {
+    height: 100dvh;
+    padding: 15dvh 10vw 15dvh 10vw;
+    transition: opacity 1s;
+}
+
 .contenido-icono {
-    font-size: 10dvh !important;
+    font-size: 15dvh !important;
     line-height: 15dvh !important;
 }
 
@@ -131,7 +137,7 @@ nav {
     max-height: 80dvh;
     position: sticky;
     top: 15dvh;
-    background-color: rgb(59, 59, 59);
+    background-color: var(--background-dark);
     overflow: hidden;
     aspect-ratio:  1280 / 800;
     border-radius: 5%;

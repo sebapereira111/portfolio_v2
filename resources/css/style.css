@@ -4,7 +4,7 @@
 
 :root {
     --background: #17202A;
-    --background-dark: #121a23;
+    --background-dark: #0c1218;
     --forecolor: #D1F2EB;
   }
 
@@ -133,6 +133,7 @@ nav {
 }
 
 .proyecto {
+    transition: opacity 1s;
     max-width: 100%;
     max-height: 80dvh;
     position: sticky;
@@ -178,17 +179,22 @@ nav {
         color: #D1F2EB;
         font-size: 6dvh;
     }
-    .contenido {
-        padding: 10dvh 5dvh 5dvh 5dvh;
+    .block {
+        padding: 5dvh 2.5vw 2.5dvh 2.5vw;
         ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 0;
+            li {
+                display: list-item;
+            }
         }
         h2 {
             font-size: 1.5rem;
         }
+        p {
+            text-align: center;
+        }
+    }
+    .contenido {
+        padding: 10dvh 2.5dvh 2.5dvh 2.5dvh;
     }
     #proyectos {
         row-gap: 45dvh;

@@ -178,8 +178,8 @@ nav {
     .nav-list {
         height: 40lvh;
         width: 100%;
-        margin-top: 5lvh;
-        margin-bottom: 5lvh;
+        margin-top: 0;
+        margin-bottom: 10lvh;
         display: flex;
         flex-direction: column;
     }

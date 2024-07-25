@@ -37,12 +37,12 @@ p {
 /* ------ */
 
 header {
-    height: 50dvh;
+    height: 50lvh;
 }
 
 h1 {
-    font-size: 23dvh;
-    line-height: 25dvh;
+    font-size: 23lvh;
+    line-height: 25lvh;
     text-align: right;
     padding-right: 1vw;
 }
@@ -56,15 +56,15 @@ nav {
     top: 0;
     z-index: 100;
     background-color: var(--background);
-    box-shadow: 0px 3vh 3vh 0px #17202A;
+    box-shadow: 0 3lvh 3lvh 0 #17202A;
 }
 
 .nav-list {
     position: inherit;
     top: 0;
-    height: 10dvh;
-    margin-top: 20dvh;
-    margin-bottom: 20dvh;
+    height: 10lvh;
+    margin-top: 20lvh;
+    margin-bottom: 20lvh;
     display: flex;
     align-items: center;
 }
@@ -76,7 +76,7 @@ nav {
 
 .nav-link {
     color: var(--forecolor);
-    font-size: 8dvh;
+    font-size: 8lvh;
 }
 
 /* ------------------------------------ */
@@ -90,7 +90,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5dvh 10vw 5dvh 10vw;
+    padding: 5lvh 10vw 5lvh 10vw;
     background-color: var(--background-dark);
     border-radius: 5%;
     ul {
@@ -107,14 +107,14 @@ nav {
 }
 
 .contenido {
-    height: 100dvh;
-    padding: 15dvh 10vw 15dvh 10vw;
+    height: 100lvh;
+    padding: 15lvh 10vw 15lvh 10vw;
     transition: opacity 1s;
 }
 
 .contenido-icono {
-    font-size: 15dvh !important;
-    line-height: 15dvh !important;
+    font-size: 15lvh !important;
+    line-height: 15lvh !important;
 }
 
 /* --------- */
@@ -122,22 +122,22 @@ nav {
 /* --------- */
 
 #proyectos {
-    min-height: 100dvh;
+    min-height: 100lvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 25dvh;
-    padding: 10dvh 10dvw 15dvh 10dvw;
+    row-gap: 25lvh;
+    padding: 10lvh 10vw 15lvh 10vw;
     position: relative;
 }
 
 .proyecto {
     transition: opacity 1s;
     max-width: 100%;
-    max-height: 80dvh;
+    max-height: 80lvh;
     position: sticky;
-    top: 15dvh;
+    top: 15lvh;
     background-color: var(--background-dark);
     overflow: hidden;
     aspect-ratio:  1280 / 800;
@@ -164,7 +164,7 @@ nav {
     #boton-menu {
         position: fixed;
         top: 0;
-        height: 10vh;
+        height: 10lvh;
         width: 100%;
         z-index: 1000;
         &:hover {
@@ -176,10 +176,10 @@ nav {
         line-height: 17vw;
     }
     .nav-list {
-        height: 40dvh;
+        height: 40lvh;
         width: 100%;
-        margin-top: 5dvh;
-        margin-bottom: 5dvh;
+        margin-top: 5lvh;
+        margin-bottom: 5lvh;
         display: flex;
         flex-direction: column;
     }
@@ -187,7 +187,7 @@ nav {
         position: static;
     }
     .nav-link {
-        font-size: 6dvh;
+        font-size: 6lvh;
     }
     .mostrar-nav-item {
         position: fixed;
@@ -195,7 +195,7 @@ nav {
         z-index: 10;
     }
     .block {
-        padding: 5dvh 2.5vw 2.5dvh 2.5vw;
+        padding: 5lvh 2.5vw 2.5lvh 2.5vw;
         ul {
             li {
                 display: list-item;
@@ -209,11 +209,11 @@ nav {
         }
     }
     .contenido {
-        padding: 10dvh 2.5dvh 2.5dvh 2.5dvh;
+        padding: 10lvh 2.5vw 2.5lvh 2.5vw;
     }
     #proyectos {
-        row-gap: 45dvh;
-        padding: 50dvh 2dvw 25dvh 2dvw;
+        row-gap: 45lvh;
+        padding: 50lvh 2vw 25lvh 2vw;
     }
     .proyecto {
         position: sticky;
@@ -233,7 +233,7 @@ nav {
 .nav-inicio {
     position: fixed;
     top: 0;
-    height: 50vh;
+    height: 50lvh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -255,13 +255,13 @@ nav {
     display: block !important;
     position: fixed;
     top: 0;
-    height: 100vh;
+    height: 100lvh;
     width: 100vw;
     background-color: rgba(23, 32, 42, 0.8);
     z-index: 100;
     .nav-list {
         position: relative;
-        top: 50vh;
+        top: 50lvh;
         li {
             flex-grow: 1;
             text-align: center;

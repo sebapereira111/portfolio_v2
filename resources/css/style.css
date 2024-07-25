@@ -37,12 +37,12 @@ p {
 /* ------ */
 
 header {
-    height: 50lvh;
+    height: 50svh;
 }
 
 h1 {
-    font-size: 23lvh;
-    line-height: 25lvh;
+    font-size: 23svh;
+    line-height: 25svh;
     text-align: right;
     padding-right: 1vw;
 }
@@ -56,15 +56,15 @@ nav {
     top: 0;
     z-index: 100;
     background-color: var(--background);
-    box-shadow: 0 3lvh 3lvh 0 #17202A;
+    box-shadow: 0 3vh 3vh 0 #17202A;
 }
 
 .nav-list {
     position: inherit;
     top: 0;
-    height: 10lvh;
-    margin-top: 20lvh;
-    margin-bottom: 20lvh;
+    height: 10svh;
+    margin-top: 20svh;
+    margin-bottom: 20svh;
     display: flex;
     align-items: center;
 }
@@ -76,7 +76,7 @@ nav {
 
 .nav-link {
     color: var(--forecolor);
-    font-size: 8lvh;
+    font-size: 8svh;
 }
 
 /* ------------------------------------ */
@@ -90,7 +90,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5lvh 10vw 5lvh 10vw;
+    padding: 5svh 10vw 5svh 10vw;
     background-color: var(--background-dark);
     border-radius: 5%;
     ul {
@@ -108,13 +108,13 @@ nav {
 
 .contenido {
     height: 100lvh;
-    padding: 15lvh 10vw 15lvh 10vw;
+    padding: 15svh 10vw 25svh 10vw;
     transition: opacity 1s;
 }
 
 .contenido-icono {
-    font-size: 15lvh !important;
-    line-height: 15lvh !important;
+    font-size: 15svh !important;
+    line-height: 15svh !important;
 }
 
 /* --------- */
@@ -122,22 +122,22 @@ nav {
 /* --------- */
 
 #proyectos {
-    min-height: 100lvh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 25lvh;
-    padding: 10lvh 10vw 15lvh 10vw;
+    row-gap: 25svh;
+    padding: 10svh 10vw 15svh 10vw;
     position: relative;
 }
 
 .proyecto {
     transition: opacity 1s;
     max-width: 100%;
-    max-height: 80lvh;
+    max-height: 80svh;
     position: sticky;
-    top: 15lvh;
+    top: 15svh;
     background-color: var(--background-dark);
     overflow: hidden;
     aspect-ratio:  1280 / 800;
@@ -164,7 +164,7 @@ nav {
     #boton-menu {
         position: fixed;
         top: 0;
-        height: 10lvh;
+        height: 10svh;
         width: 100%;
         z-index: 1000;
         &:hover {
@@ -176,10 +176,10 @@ nav {
         line-height: 17vw;
     }
     .nav-list {
-        height: 40lvh;
+        height: 40svh;
         width: 100%;
         margin-top: 0;
-        margin-bottom: 10lvh;
+        margin-bottom: 10svh;
         display: flex;
         flex-direction: column;
     }
@@ -187,7 +187,7 @@ nav {
         position: static;
     }
     .nav-link {
-        font-size: 6lvh;
+        font-size: 6svh;
     }
     .mostrar-nav-item {
         position: fixed;
@@ -195,7 +195,7 @@ nav {
         z-index: 10;
     }
     .block {
-        padding: 5lvh 2.5vw 2.5lvh 2.5vw;
+        padding: 5svh 2.5vw 2.5svh 2.5vw;
         ul {
             li {
                 display: list-item;
@@ -209,20 +209,27 @@ nav {
         }
     }
     .contenido {
-        padding: 10lvh 2.5vw 2.5lvh 2.5vw;
+        padding: 10svh 2.5vw 20svh 2.5vw;
     }
     #proyectos {
-        row-gap: 45lvh;
-        padding: 50lvh 2vw 25lvh 2vw;
+        row-gap: 45svh;
+        padding: 50svh 2vw 25svh 2vw;
     }
     .proyecto {
         position: sticky;
-        top: 55dvh;
+        top: 55svh;
         transform: translateY(-50%);
         aspect-ratio:  1280 / 880;
             h3 {
             font-size: 1.5rem;
         }
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    p {
+        font-size: 5svh;
+        line-height: 7svh;
     }
 }
 
@@ -233,7 +240,7 @@ nav {
 .nav-inicio {
     position: fixed;
     top: 0;
-    height: 50lvh;
+    height: 50dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -255,13 +262,13 @@ nav {
     display: block !important;
     position: fixed;
     top: 0;
-    height: 100lvh;
+    height: 100dvh;
     width: 100vw;
     background-color: rgba(23, 32, 42, 0.8);
     z-index: 100;
     .nav-list {
         position: relative;
-        top: 50lvh;
+        top: 50dvh;
         li {
             flex-grow: 1;
             text-align: center;

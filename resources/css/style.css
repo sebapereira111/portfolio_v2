@@ -56,15 +56,15 @@ nav {
     top: 0;
     z-index: 100;
     background-color: var(--background);
-    box-shadow: 0 3vh 3vh 0 #17202A;
+    box-shadow: 0 2vh 2vh 0 #17202A;
 }
 
 .nav-list {
     position: inherit;
     top: 0;
     height: 5lvh;
-    margin-top: 20lvh;
-    margin-bottom: 25lvh;
+    margin-top: 15lvh;
+    margin-bottom: 30lvh;
     display: flex;
     align-items: center;
 }
@@ -108,7 +108,7 @@ nav {
 
 .contenido {
     height: 100lvh;
-    padding: 15lvh 10vw 20lvh 10vw;
+    padding: 12lvh 10vw 23lvh 10vw;
     transition: opacity 1s;
 }
 

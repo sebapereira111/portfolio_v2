@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-link {
-    color: #D1F2EB;
+    color: var(--forecolor);
     font-size: 8dvh;
 }
 
@@ -161,12 +161,23 @@ nav {
 /* ----------------- */
 
 @media all and (orientation: portrait) {
+    #boton-menu {
+        position: fixed;
+        top: 0;
+        height: 10vh;
+        width: 100%;
+        z-index: 1000;
+        &:hover {
+            cursor: pointer;
+        }
+    }
     h1 {
         font-size: 16vw;
         line-height: 17vw;
     }
     .nav-list {
         height: 40dvh;
+        width: 100%;
         margin-top: 5dvh;
         margin-bottom: 5dvh;
         display: flex;
@@ -176,8 +187,12 @@ nav {
         position: static;
     }
     .nav-link {
-        color: #D1F2EB;
         font-size: 6dvh;
+    }
+    .mostrar-nav-item {
+        position: fixed;
+        top: 0;
+        z-index: 10;
     }
     .block {
         padding: 5dvh 2.5vw 2.5dvh 2.5vw;
@@ -211,4 +226,45 @@ nav {
     }
 }
 
+/* --------------- */
+/* Menu para movil */
+/* --------------- */
 
+.nav-inicio {
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: block;
+        i {
+            display: block;
+        }
+    }
+}
+
+#menu {
+    display: none;
+}
+
+.menu {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(23, 32, 42, 0.8);
+    z-index: 100;
+    .nav-list {
+        position: relative;
+        top: 50vh;
+        li {
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+}
